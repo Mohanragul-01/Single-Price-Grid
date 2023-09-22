@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+
+/* VARIABLES */
+
+:root
+{
+    --dark-cyan: hsl(179, 62%, 43%, 0.9);
+    --cyan: hsla(179, 62%, 43%, 0.65);
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --blue: hsl(218, 22%, 67%);
+}
+
+
+/* COMMON STYLES */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    list-style-type: none;
+}
+
+body
+{
+    width: 100vw;
+    height: auto;
+    padding: 4.5rem 2rem;
+    background-color: var(--gray);
+}
+
+main
+{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+/* CARD STYLES */
+
+.top
+{
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+.top .title
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cyan);
+}
+.top .info
+{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--yellow);
+    margin: 1rem 0;
+}
+.top .txt
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--blue);
+    line-height: 1.1rem;
+}
+
+.bot .lt, .bot .rt
+{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.lt
+{
+    background-color: var(--dark-cyan);
+}
+.lt .plan, .rt .why
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray);
+}
+.lt .cost
+{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--gray);
+    margin: 1rem 0 .75rem;
+}
+.lt .cost span, .lt .benefit
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+.lt .btn 
+{
+    margin: 1.5rem 0 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .75rem 0;
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--yellow);
+    color: var(--gray);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.099);
+    cursor: pointer;
+}
+
+.rt
+{
+    background-color: var(--cyan);
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 14px;
+}
+.rt .about
+{
+    margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 756px) {
+    /* COMMON STYLES */
+
+    body
+    {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main
+    {
+        width: 50%;
+        height: auto;
+        background-color: white;
+        border-radius: .5rem;
+    }
+    
+    /* CARD STYLES */
+
+    .top
+    {
+        width: 100%;
+        padding: 2.5rem ;
+    }
+    .top .title
+    {
+        font-size: 1.75rem;
+    }
+    .top .info
+    {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 .75rem;
+    }
+    .top .txt
+    {
+        font-size: 1.1rem;
+        padding-right: 3rem;
+        line-height: 1.5rem;
+    }
+
+    .bot
+    {
+        display: flex;
+    }
+    .bot .lt, .bot .rt
+    {
+        padding: 2.5rem;
+    }
+    
+    .lt .plan, .rt .why
+    {
+        font-size: 1.25rem;
+    }
+    .lt .cost
+    {
+        font-size: 2.2rem;
+    }
+    .lt .benefit
+    {
+        font-size: 1.15rem;
+    }
+    .lt .btn
+    {
+        margin-top: 2rem;
+    }
+    
+    .rt
+    {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+}
